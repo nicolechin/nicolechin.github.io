@@ -1,0 +1,371 @@
+
+body {
+	font-family: Avenir Next, Helvetica,Arial,sans-serif;
+}
+.div1 {
+	width: 100vw; /* vw=viewport/window width units 100vw=100% of the window*/
+	height: 100vh; /* vh = vertical units (height) */
+	display: flex; /* everything inside display flex fits to the width perfectly */
+}
+.pink {
+	width: 50%; /* % of the bigger div */
+	height: 100vh;
+	background-color: #E4CFE5;
+}
+.green  {
+	width: 50%;
+	height: 100vh;
+	background-color: #C7FC6B;
+}
+.hi {
+	margin: 40px; /* space AROUND element */
+	font-size: 60pt;
+	font-weight: 700;
+	color: #B287B1;
+	top: 35vh; /* distance from the top of the bigger div */
+	position: relative; /* positions (you can move it with top) and occupies space */
+	text-align: right; 
+}
+.header {
+	margin: 40px;
+	text-align: right;
+	font-family: Futura;
+	font-size: 16pt;
+	color: black;
+}
+.work, .about {
+	opacity: 0.4;
+}
+.work:hover, .about:hover {
+	opacity: 1;
+}
+.about {
+	margin-left: 40px;
+}
+.name {
+	margin: 40px;
+	font-size: 60pt;
+	font-weight: 700;
+	color: #85BC3F; /* font colour not background colour */
+	top: 50vh;
+	position: relative;
+}
+
+.ni-name {
+	position: relative;
+	top: 10px;
+}
+.c-name {
+	position: relative;
+	top: 40px;
+}
+.o-name {
+	position: relative;
+	top: 30px;
+}
+ 
+.l-name {
+	position: relative;
+	top: 20px;
+}
+.e-name {
+	position: relative;
+	top: 10px;
+}
+
+.ni-name:hover, .c-name:hover, .o-name:hover, .l-name:hover, .e-name:hover {
+	top: 0;
+}
+.folder-1, .folder-2, .worddoc {
+	width: 80px;
+	height: auto;
+	margin-top: 10px;
+
+}
+
+.two-folders {
+	position: absolute;
+	margin: 20px;
+	bottom: 10px;
+	width: 50px;
+	text-align: left;
+	font-size: 12pt;
+}
+
+/*  archive css */
+
+.pink-bg {
+	width: 100%; /* % of the bigger div */
+	height: 100vh;
+	background-color: #E4CFE5;
+}
+.back-button {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	border: 1pt solid black;
+	padding: 5px;
+}
+.checkered > div > img:not(.postcardbw)  {
+	width: 200px;
+	position: absolute;
+
+}
+.checkered {
+	width: 700px;
+	position: relative;
+	margin: auto;
+	height: 100%;
+}
+/*div.checkered > */img.checkered-bg {
+	position: relative;
+	top: 100px;
+	width: 100% /*!important*/;
+
+}
+
+.postcard:click > .postcardbw {
+	display: block;
+}
+.postcard {
+	cursor: pointer ;
+}
+.postcard-1 {
+	left: -10%;
+	top: 25%;
+	transform: rotate(20deg);
+	z-index: 7;
+}
+
+.postcard-2 {
+	left: 40%;
+	top: 70%;
+	transform: rotate(-10deg);
+}
+
+.postcard-3 {
+	left: 80%;
+	top: 7%;
+	transform: rotate(20deg);
+}
+
+.postcard-4 {
+	left: 65%;
+	top: 30%;
+	transform: rotate(48deg);
+}
+
+.postcard-5 {
+	left: 38%;
+	top: 30%;
+	transform: rotate(-20deg);
+	z-index: 8;
+}
+
+.postcard-6 {
+	left: 42%;
+	top: 45%;
+	transform: rotate(34deg);
+	z-index: 9;
+}
+
+.postcard-7 {
+	left: 13%;
+	top: 45%;
+	transform: rotate(-30deg);
+	z-index: 8;
+}
+
+.postcard-8 {
+	left: 29%;
+	top: 55%;
+	z-index: 0;
+	
+}
+
+.postcard-9 {
+	left: 9%;
+	top: 20%;
+	transform: rotate(-20deg);
+	z-index: 6;
+	
+}
+
+
+.postcard-10 {
+	left: 9%;
+	top: 70%;
+	transform: rotate(-40deg);
+	z-index: 6;
+}
+
+.bg-modal {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.7);
+	position: fixed;
+	display: none;
+	margin-left: calc(-50vw + 350px);
+
+}
+
+.bg-modal.active {
+	display: block;
+	z-index: 19;
+}
+
+.postcardbw {
+	display: none;
+	position: relative;
+	width: 50%;
+	height: auto;
+}
+.postcardbw.active {
+	display: inline;
+	z-index: 101;
+
+}
+
+.modal-content {
+	column-count: 2;
+	width: 85%;
+	height: 85%;
+	background-color: white;
+	text-align: center;
+	top:  7.5%;
+	margin: auto;
+	padding: 20px;
+	position: relative;
+}
+
+.p3, .p4, .p7, .p8 {
+	width: 40%;
+	height: auto;
+	z-index: 18
+	padding: 20px;
+
+
+
+}
+.close {
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+
+}
+
+.pick {
+	left: 10%;
+	top: 40%;
+	position: absolute;	
+	font-size: 30pt;
+	width: 200px;
+
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+
+
+
+/*  screnshots css */
+
+
+.white-bg {
+	width: 100vw; 
+	display: flex;
+}
+.unfiltered {
+	font-size: 100pt;
+	top: 60%
+	right: 90%;
+	position: fixed;
+}
+
+.black-border {
+	width: 50%;
+	height: 100vh;
+	background-color: black;
+
+}
+
+.iphone {
+	left: 18%;
+	top: 27%;
+	position: fixed;
+	width: 500px;
+	height: auto;
+
+}
+
+.back-button-white {
+	position: fixed;
+	top: 40px;
+	left: 40px;
+	padding: 5px;
+	font: white;
+	border: 1pt solid white;
+
+}
+
+.unfiltered {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/*  about css */
+
+.div2 {
+	width: 100%;
+	height: 100vh;
+	background-color: #C7FC6B;
+	position: relative;
+}
+
+.about-heading {
+	font-size: 80pt;
+	font-weight: bold;
+	color: #85BC3F;
+	right: 30%;
+	top: 3%;
+	position: fixed;
+	
+
+}
+
+
+/*  reading css */
+
+.postcards-heading {
+	font-size: 60pt;
+	font-weight: bold;
+	color: #85BC3F;
+	right: 15%;
+	top: 3%;
+	position: fixed;
+}
+
+.text  {
+	font-size: 16pt;
+	color: #85BC3F;
+	right: 70%;
+	top: 15%;
+	position: fixed;
+}
+
+.para {
+	font-size:  16pt;
+	color: black;
+	top: 200px;
+	margin-left: 100px;
+	margin-right: 100px;
+	position: relative;
+	text-align: left;
+}
+
