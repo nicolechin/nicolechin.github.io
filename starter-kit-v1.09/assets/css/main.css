@@ -1,0 +1,137 @@
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	background-color: black;
+	color: white;
+
+}
+
+a {
+	color:red;
+}
+
+/*INDEX HOMEPAGE*/
+
+.index-intro {
+	font-size: 18px;
+	margin-bottom: 25vh;
+	padding:10 px;
+
+}
+.index-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-top: 2px solid white;
+}
+
+.index-name {
+	flex: 0 0 50%;
+	text-decoration: none;
+	color: white;
+}
+
+.index-layer {
+
+}
+
+.index-tag {
+
+}
+
+/*Ip address*/
+
+.ip {
+	background-color: lime;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ip-text {
+	font-size: 14vw;
+	text-align: center;
+	color: black;
+}
+
+/* checkers*/
+
+.checkers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkers-black {
+	width: 50vw;
+	height: 50vh;
+	background-color: black;
+
+}
+
+.checkers-white {
+	width: 50vw;
+	height: 50vh;
+	background-color: white;
+}
+
+
+/* checkers type text*/
+.checkers-type {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left:0;
+	top:0;
+}
+
+.checkers-text {
+	font-size: 40vw;
+	color: magenta;
+	border: 1px solid magenta;
+	padding: 2vw;
+	border-radius: 1px;
+}
+
+.cloud-pattern {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cloud-circle {
+	width: 25vw;
+	height: 25vh;
+	background-image: linear-gradient (blue, white)
+	border-radius: 50%;
+}
+
+.chip-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.chip {
+	width: 60vw;
+	height: 60vh;
+	border: 1px solid gray;
+	padding: 5vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.text { 
+	color: gray;
+	font-size: 15vw;
+
+ }
+
