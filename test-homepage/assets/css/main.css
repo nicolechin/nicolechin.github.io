@@ -106,7 +106,7 @@ body {
 	border: 1pt solid black;
 	padding: 5px;
 }
-.checkered > div > img:not(.postcardbw)  {
+.checkered img  {
 	width: 200px;
 	position: absolute;
 
@@ -243,18 +243,13 @@ body {
 	height: auto;
 	z-index: 18
 	padding: 20px;
-
-
-
 }
-.close {
-	position: absolute;
-	top: 0;
-	right: 14px;
-	font-size: 42px;
-	transform: rotate(45deg);
-	cursor: pointer;
 
+.postcardbw-16, .postcardbw-17, .postcardbw-20, .postcardbw-21 {
+	width: 40%;
+	height: auto;
+	z-index: 18
+	padding: 20px;
 }
 
 .pick {
@@ -368,4 +363,48 @@ a {
 	position: relative;
 	text-align: left;
 }
+
+.full {
+	position: fixed;
+	top:0px;
+	left:0px;
+	display: none;
+	z-index: 14;
+	float: left;
+    width: 100%;
+    padding: 30px;
+    background: white;
+    height: 100vh;
+
+}
+
+.full img  {
+	display: inline-block;
+    height: auto;
+    width: 27%;
+
+
+}
+
+.Cartoon-postcards-text {
+	right: 0pt;
+	bottom: 0pt;
+	font-size: 20pt;
+	padding-bottom: 10pt;
+}
+
+.full.active {
+	display: block;
+	
+}
+
+.close {
+	cursor: pointer;
+	position: relative;
+    float: right;
+    margin: 10px;
+    border: 1pt solid black;
+    padding: 5px;
+}
+
 

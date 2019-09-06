@@ -4,12 +4,29 @@
 	$('.bg-modal').toggleClass('active');
 });*/
 
+$('.close').click(function() {
+	$('.full').removeClass('active');
+});
+
 
 $('.postcard-1').click(function() {
-	$('.postcardbw-3, .postcardbw-4, .postcardbw-7, .postcardbw-8').toggleClass('active');
-	$('.bg-modal').toggleClass('active');
-})
+	$('.full-1').addClass('active');
+});
 
 $('.close').click(function() {
-	$('.bg-modal, .postcardbw').removeClass('active');
-})
+	$('.full').removeClass('active');
+});
+
+
+$('.postcard-9').click(function() {
+	$('.full-9').addClass('active');
+});
+
+$('.close').click(function() {
+	$('.full').removeClass('active');
+});
+
+
+$('.postcard-7').click(function() {
+	$('.full-7').addClass('active');
+});
