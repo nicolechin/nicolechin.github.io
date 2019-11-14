@@ -10,7 +10,7 @@ a {
 
 .intro {
 	padding: 10px;
-	font-family: avenir;
+	font-family: courier;
 	font-size: 70pt;
 	margin-left: 8%;
 	margin-top: 5pt;
@@ -31,6 +31,7 @@ a {
 
 .title {
 	flex:0 0 50%;
+  font-family: courier;
 }
 .title > a {
   color: #AF7EA6;
@@ -39,10 +40,12 @@ a {
 
 .type {
 	flex:0 0 25%;
+  font-family: courier;
 }
 
 .date {
 	flex:0 0 25%;
+  font-family: courier;
 }
 
 .upcoming {
@@ -148,7 +151,7 @@ body {
   bottom: 10px;
   right: 10px;
   line-height: 25px;
-  font-family: 'times new roman';
+  font-family: courier;
   overflow: hidden;
   outline: none;
 }
@@ -189,13 +192,8 @@ body {
   display: block;
 }
 
-.close2 {
-  text-align: right;
-  width: 98%;
-  padding: 3px;
-  font-family: avenir;
-  cursor: pointer;
-}
+
+
 .paper2::before {
   content: '';
   position: absolute;
@@ -217,7 +215,7 @@ body {
   bottom: 10px;
   right: 10px;
   line-height: 25px;
-  font-family: 'times new roman';
+  font-family: courier;
   overflow: hidden;
   outline: none;
   display: block;

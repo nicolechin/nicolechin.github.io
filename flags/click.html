@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>keyboard</title>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-  	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
-  	<script src="assets/js/jquery-3.4.1.min.js"></script>
-  	<script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <style>
       body {
@@ -16,12 +16,42 @@
         padding: 20px;
         display: inline-block;
         animation-name:colourclick;
-        animation-duration:851ms;
+        animation-duration:4.99s; /*3404*/
         animation-iteration-count: infinite;
         animation-timing-function: linear;
-        animation-direction: alternate;
 
       }
+      .click img {
+  height: 500px;
+  width: auto;
+  bottom: 1px;
+  position: absolute;
+  left: 19%;
+  bottom: 19%;
+}
+
+@keyframes colourclick {
+  0% {
+    background-color: white;
+  }
+  34.1% {
+    background-color: white;
+  }
+  34.2% {
+    background-color: #3171ed;
+  }
+
+  84.9% {
+    background-color: #3171ed;
+  }
+  85% {
+    background-color: white; /*3171ed*/
+  }
+  100% {
+    background-color: white; /*3171ed*/
+  }
+
+}
 
     </style>
 

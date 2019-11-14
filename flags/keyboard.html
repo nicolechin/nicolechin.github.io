@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>keyboard</title>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-  	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
-  	<script src="assets/js/jquery-3.4.1.min.js"></script>
-  	<script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <style>
       body {
@@ -15,36 +15,90 @@
         align-items: center;
 
       }
+      .container {
+        position: relative;
+        margin: 0 auto;
+      }
+
+
+        .keyboard img {
+          height: 400px;
+          color: black;
+          position: relative;
+          top: -20px;
+        }
+
+        .rectangle img {
+          height: 22px;
+          z-index: 20;
+          animation: linear infinite 0.7s;
+          animation-name: rr;
+          animation-duration: 0.5s;
+          animation-iteration-count: infinite;
+          margin-left: 53px;
+          position: absolute;
+          margin-top: 77px;
+        }
+
+        @keyframes rr {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        .exit {
+          font-family: avenir;
+          color: black;
+          width: fit-content;
+          margin-left: 50px;
+          position: relative;
+          margin: 0 auto;;
+
+        }
+
+        .exit-text {
+        
+          overflow: hidden;
+          letter-spacing: 2px;
+          animation: typing 1s steps(30, end), blink .75s step-end infinite;
+          white-space: nowrap;
+          font-size: 30px;
+          font-weight: 700;
+          border-right: 4px solid red;
+          box-sizing: border-box;
+        }
+
+        @keyframes typing {
+          from {
+            width: 0%;
+          }
+          to {
+            width: 19%;
+          }
+        }
 
 
     </style>
-
   </head>
   <body>
     <!-- DO NOT REMOVE ABOVE !-->
     <!-- start here !-->
-
-  
+    <div class="container">
+    <div class="exit">
+        <div class="exit-text">press esc to exit</div>
+      </div>
+    <div class="rectangle">
+        <img src="assets/images/rectangle.png" class="rectangle-pic">  
+       </div> 
     <div class="keyboard">
       <img src="assets/images/keyboard.png" class="keyboard-pic">
-      <div class="rectangle">
-       <img src="assets/images/rectangle.png" class="rectangle-pic">  
-      </div> 
-      <div class="exit">
-        <div class="exit-text">press esc to exit
-      </div>
-    </div>
-
-     
-
-
-
-
-
-    
-
-
-
+    </div></div>
     <!-- DO NOT REMOVE BELOW !-->
     <!-- end here !-->
   </body>

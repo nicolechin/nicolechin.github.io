@@ -2,39 +2,52 @@
 <html>
   <head>
     <meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>keyboard</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>gender</title>
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-  	<link rel="stylesheet" href="assets/css/main.css" type="text/css">
-  	<script src="assets/js/jquery-3.4.1.min.js"></script>
-  	<script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
     <style>
       body {
         background-color: yellow;
         align-items: center;
         font-family: Avenir Next, Helvetica,Arial,sans-serif;
-      
-      
 
       }
     
 
-.backgroundngender {
+.backgroundgender {
   width: 100vw; /* vw=viewport/window width units 100vw=100% of the window*/
   height: 100vh; /* vh = vertical units (height) */
   display: flex; /* everything inside display flex fits to the width perfectly */
   position: absolute;
 }
-.leftgender {
+.leftgender, .rightgender {
   width: 50%; /* % of the bigger div */
-  height: 100vh;
+  height: 100%;
   background-color: lime;
-  position: absolute;
-  z-index: 1;
-  right: 0pt;
-}
+  position: relative;
+  z-index: 1;text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+.rightgender {
+  background-color: yellow;
+
+}
+.rightgender p {
+height: fit-content;
+display: inline-block;
+text-align: left;
+line-height: 1.7;
+}
+.rightgender input {
+  margin-right: 10px;
+}
 
 .radio {
     background-color: initial;
@@ -47,7 +60,6 @@
     position: absolute;
     padding: 100pt;
    
-
 }
 
 .gender_0 {
@@ -57,7 +69,6 @@
   font-size: 12pt;
   position: relative;
   z-index: 5;
-
 
 }
 
@@ -69,9 +80,7 @@
   position: relative;
   z-index: 5;
 
-
 }
-
 
 .gender_2 {
   color: black;
@@ -84,53 +93,35 @@
 
 }
 
-
-
     </style>
 
   </head>
   <body>
     <!-- DO NOT REMOVE ABOVE !-->
     <!-- start here !-->
-
   
-    <div class="backgroundgender"></div>
-      <div class="leftgender"></div>
-      <div class="rightgender"></div>
-        <table>
-          <tr>
-            <td>Gender</td>
-            <td>
-              <p>
-                <label>
-                  <input type="radio" name="gender" value="M" id="gender_0">
-                    Male
-                </label>
-                <label>
-                  <input type="radio" name="gender" value="F" id="gender_1">
-                    Female
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="gender" value="O" id="gender_2">
-                    Other
-                </label>
-                <br>
-              </p>
-            </td>
-          </tr>
-        </table>
-      
 
-     
+      <div class="backgroundgender">      <div class="leftgender">
+          <p>Gender</p>
+      </div>
+      <div class="rightgender">
+          <p> <input type="radio" name="gender" value="M" id="gender_0">
+              <label>
+                  Male
+              </label>                <br/>
+              <input type="radio" name="gender" value="F" id="gender_1">
+              <label>
+                  Female
+              </label>          
 
+              <br/> <input type="radio" name="gender" value="O" id="gender_2">
+              <label>
+                  Other
+              </label>               
 
-
-
-
-    
-
-
+              <br/>
+            </p>
+      </div></div>
 
     <!-- DO NOT REMOVE BELOW !-->
     <!-- end here !-->
