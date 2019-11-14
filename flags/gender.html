@@ -13,10 +13,77 @@
       body {
         background-color: yellow;
         align-items: center;
+        font-family: Avenir Next, Helvetica,Arial,sans-serif;
       
       
 
       }
+    
+
+.backgroundngender {
+  width: 100vw; /* vw=viewport/window width units 100vw=100% of the window*/
+  height: 100vh; /* vh = vertical units (height) */
+  display: flex; /* everything inside display flex fits to the width perfectly */
+  position: absolute;
+}
+.leftgender {
+  width: 50%; /* % of the bigger div */
+  height: 100vh;
+  background-color: lime;
+  position: absolute;
+  z-index: 1;
+  right: 0pt;
+}
+
+
+.radio {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial;
+    position: absolute;
+    padding: 100pt;
+   
+
+}
+
+.gender_0 {
+  color: black;
+  height: auto;
+  font-family: avenir;
+  font-size: 12pt;
+  position: relative;
+  z-index: 5;
+
+
+}
+
+.gender_1 {
+  color: black;
+  height: auto;
+  font-family: avenir;
+  font-size: 12pt;
+  position: relative;
+  z-index: 5;
+
+
+}
+
+
+.gender_2 {
+  color: black;
+  height: auto;
+  font-family: avenir;
+  font-size: 12pt;
+  position: relative;
+  z-index: 5;
+
+
+}
+
 
 
     </style>
@@ -30,26 +97,30 @@
     <div class="backgroundgender"></div>
       <div class="leftgender"></div>
       <div class="rightgender"></div>
-        <td>Gender</td>
-      <td><p>
-          <label>
-            <input type="radio" name="gender" value="M" id="gender_0">
-          Male</label>
-          <label>
-            <input type="radio" name="gender" value="F" id="gender_1">
-            Female</label>
-          <br>
-          <label>
-            <input type="radio" name="gender" value="O" id="gender_2">
-            Other</label>
-          <br>
-      </p></td>
-    </tr>
-    <tr>
-    </div>
-    
-     
-    </div>
+        <table>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <p>
+                <label>
+                  <input type="radio" name="gender" value="M" id="gender_0">
+                    Male
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="F" id="gender_1">
+                    Female
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="gender" value="O" id="gender_2">
+                    Other
+                </label>
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table>
+      
 
      
 
