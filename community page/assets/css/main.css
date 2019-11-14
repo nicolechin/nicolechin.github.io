@@ -1,0 +1,320 @@
+body {
+	
+	font-size: 22px;
+	background-color: black;
+}
+
+a {
+	
+}
+
+.intro {
+	padding: 10px;
+	font-family: avenir;
+	font-size: 70pt;
+	margin-left: 8%;
+	margin-top: 5pt;
+}
+
+.table {
+	margin-top: 20px;
+	font-family: courier;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap:wrap;
+	border-top: 2px solid #05bbd3;
+	padding: 10px;
+}
+
+.title {
+	flex:0 0 50%;
+}
+.title > a {
+  color: #AF7EA6;
+  text-decoration: none;
+}
+
+.type {
+	flex:0 0 25%;
+}
+
+.date {
+	flex:0 0 25%;
+}
+
+.upcoming {
+	padding: 1px;
+	margin-top: 20px;
+	font-family: courier;
+	background-color: #9ab798;
+
+}
+
+.past {
+  padding: 1px;
+  margin-top: 20px;
+  font-family: courier;
+  background-color: #9ab798;
+
+}
+
+
+.typetitle {
+	padding: 1px;
+	margin-top: 20px;
+	font-family: courier;
+	background-color: #9ab798;
+	margin-left: 150px;
+}
+
+.datetitle {
+	padding: 1px;
+	margin-top: 20px;
+	font-family: courier;
+	background-color: #9ab798;
+	margin-left: 110px;
+}
+
+
+.typetitle2 {
+  padding: 1px;
+  margin-top: 20px;
+  font-family: courier;
+  background-color: #9ab798;
+  margin-left: 195px;
+}
+
+.datetitle2 {
+  padding: 1px;
+  margin-top: 20px;
+  font-family: courier;
+  background-color: #9ab798;
+  margin-left: 110px;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+body {
+  margin: 0;
+  padding: 0;
+  background: lightgoldenrodyellow;
+}
+.paper {
+  position: absolute;
+  height: 550px;
+  width: 450px;
+  background: rgba(255,255,255,0.9);
+  margin: -275px -225px;
+  right: 23.5%;
+  top: 50%;
+  box-shadow: 0px 0px 5px 0px #888;
+  display: none;
+  z-index: 10;
+}
+
+.active {
+  display: block;
+}
+
+.close {
+  text-align: right;
+  width: 98%;
+  padding: 3px;
+  font-family: avenir;
+  cursor: pointer;
+}
+.paper::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255,0,0,0.4);
+}
+.lines {
+  margin-top: 0px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(white 0px, white 24px, steelblue 25px);
+}
+.text {
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  font-family: 'times new roman';
+  overflow: hidden;
+  outline: none;
+}
+.holes {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: lightgoldenrodyellow;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 0px #888;
+}
+.hole-top {
+  top: 10%;
+}
+.hole-middle {
+  top: 50%;
+}
+.hole-bottom {
+  bottom: 10%;
+}
+
+
+.paper2 {
+  position: absolute;
+  height: 550px;
+  width: 450px;
+  background: rgba(213,189,229,0.9);
+  margin: -275px -225px;
+  right: 23.5%;
+  top: 50%;
+  box-shadow: 0px 0px 5px 0px #888;
+  display: none;
+  z-index: 3;
+}
+
+.active2 {
+  display: block;
+}
+
+.close2 {
+  text-align: right;
+  width: 98%;
+  padding: 3px;
+  font-family: avenir;
+  cursor: pointer;
+}
+.paper2::before {
+  content: '';
+  position: absolute;
+  left: 45px;
+  height: 100%;
+  width: 2px;
+  background: rgba(225,0,0,0.4);
+}
+.lines2 {
+  margin-top: 0px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(#D5BDE5 0px, #D5BDE5 24px, steelblue 25px);
+}
+.text2 {
+  position: absolute;
+  top: 73px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  font-family: 'times new roman';
+  overflow: hidden;
+  outline: none;
+  display: block;
+}
+.holes2 {
+  position: absolute;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  background: lightgoldenrodyellow;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 0px #888;
+}
+.hole-top2 {
+  top: 10%;
+}
+.hole-middle2 {
+  top: 50%;
+}
+.hole-bottom2 {
+  bottom: 10%;
+}
+
+.smiley {
+  bottom: 1px;
+  height: 10px;
+  width: auto;
+  position: fixed;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.left {
+  color: black;
+  flex:0 0 50%;
+  height: 100vh;
+}
+
+.left-content {
+  padding: 10px;
+}
+
+.right {
+  color: black;
+  background-color: pink;
+  flex:0 0 50%;
+  height: 100vh;
+  overflow-y: scroll; 
+}
+
+.right-content {
+  padding: 10px;
+}
+
+.chupachups {
+  display: flex;
+  flex-wrap: wrap;
+  height: 
+}
+
+.chupachup {
+  flex:0  0  33.33%;
+  height: 25%;
+}
+
+.chupachup img{
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+
+
+ 
+}
+
+.chupachup img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 2s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
